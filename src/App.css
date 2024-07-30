@@ -23,8 +23,7 @@
 }
 
 body {
-  background-image: url(./images/night.png) ;
-  background-repeat: no-repeat;
+background-color: #404680;
   box-shadow: #363636; ;
   width: 100vh;
   background-size: cover;

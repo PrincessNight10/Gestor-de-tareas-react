@@ -5,6 +5,7 @@ main {
   height: max-content;
   margin-top: 20rem;
   background-color: #a39ce5;
+  color: #81fadc;
   display: flex;
   flex-direction: column;
   align-items: center; 
