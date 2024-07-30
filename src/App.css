@@ -3,8 +3,8 @@
   --header-color: #908ba0;
   --task-color: #b7b5c4;
   --main-color:#cbcbd6;
-  --font-color: #000;
-  --btn-color: #0e3ce6;
+  --font-color: #040404;
+  --btn-color: #fff;
 }
 
 * {
@@ -23,6 +23,9 @@
 }
 
 body {
-  background-color: var(--primary-color);
-  width: 100vw;
+  background-image: url(./images/night.png) ;
+  background-repeat: no-repeat;
+  box-shadow: #363636; ;
+  width: 100vh;
+  background-size: cover;
 }

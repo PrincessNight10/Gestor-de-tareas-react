@@ -1,9 +1,11 @@
-.main-container {    
+
+main {
+  margin-bottom: 14em;  
   width: 83vw;
   height: max-content;
   margin-top: 20rem;
-  background-color: var(--main-color);
+  background-color: #a39ce5;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center; 
 }

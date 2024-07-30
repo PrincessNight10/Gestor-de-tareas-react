@@ -1,7 +1,7 @@
 .container-tasks {
   width: 75vw;
   height: max-content;  
-  background-color: var(--task-color);    
+  background-color:#8a80c0;    
   margin-top: 5rem;
   display: flex;
   flex-direction: column;

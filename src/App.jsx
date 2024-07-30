@@ -1,13 +1,5 @@
 import './App.css'
 import { Home } from './components/Pages/Home/Home'
+ export const App = () => <Home/>
 
-function App() {
 
-  return (
-    <>
-      <Home />
-    </>
-  )
-}
-
-export default App
