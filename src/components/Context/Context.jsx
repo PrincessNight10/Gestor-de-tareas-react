@@ -12,6 +12,16 @@ const tsk = [
 export const TasksProvider = ({children}) => {
   const [tasks,setTasks] = useState(tsk)
   const [filteredTasks, setfilteredTasks] = useState(tsk)
+  
+  //funcion oara actualizar estado de una tarea
+  const updateTasksStatus = (tasksid, newStatus) =>{
+    setTasks(prevTasks =>
+      prevTasks.map(task =>
+        taskContext.id === taskid ?{...task, status: newStatus} : task
+      )
+    )
+
+  }
   return (
   <taskContext.Provider value ={{
   tasks,
@@ -19,6 +29,7 @@ export const TasksProvider = ({children}) => {
   filteredTasks,
   setfilteredTasks
   }}>
+          {children}
   
   </taskContext.Provider>)  
 }

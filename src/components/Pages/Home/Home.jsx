@@ -1,14 +1,14 @@
-import React, {useContext, useState} from 'react'
+import React, {Children, useContext, useState} from 'react'
 import { Header } from '../../Layouts/Header/Header'
 import {Main} from '../../Layouts/Main/Main'
 import { ContainerTasks } from '../../Layouts/ContainerTasks/ContainerTasks';
 import { ItemTask } from '../../ItemTask/ItemTask';
-import { taskContext } from '../../Context/Context';
-
+import { TasksProvider, taskContext } from '../../Context/Context';
 
 export const Home = () => {
 
-  const context = useContext(taskContext)
+  const context= useContext(taskContext)
+
   return (
     <>
 <header>
