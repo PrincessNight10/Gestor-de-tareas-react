@@ -13,7 +13,7 @@
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: #ff0000bf;
+  background-color: #0f0f0f;
 }
 
 .item-task > h2 {
@@ -40,9 +40,10 @@
   text-decoration: line-through;  
   font-weight: bold; /* Hace que el texto sea más grueso */
   text-decoration-thickness: 1.5px;
-  text-decoration-color: #008000;
+  text-decoration-color: #29caac;
+  color: #29caac;
 }
 
-.item-task > .circle-green {
-  background-color: #0080009f;
+.item-task > .circle-green-mint{
+  background-color: #29caac;
 }

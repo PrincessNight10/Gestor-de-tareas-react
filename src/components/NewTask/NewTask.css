@@ -1,71 +1,59 @@
+/* NewTask.css */
+
 .frm-task {
-  width: 83vw;
-  height: max-content;  
-  display: flex;
-  padding: 1rem 0 1rem 0;
-  flex-direction: column;  
-  align-items: center;  
-  position: fixed;
-  top: 10.5rem;
-  background-color: #29caac;
-  z-index: -1;         
+  width: 45%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-image: url("/src/images/mlpluna.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.group-title-task, .group-description-task {  
-  width: 80%;
-  display: flex;
-  justify-content: flex-start;
-  margin: 0.5rem;
-  align-items: center;
-  color: #fff;  
-  font-size: 1.2rem; 
-  border: none; 
-  
-}
-
-fieldset > label {
-  margin-right: 1rem;
-  text-align: left;
-}
-
-.group-description-task > input,
-.group-title-task > input {  
-  width: 14rem;
-  height: 0.5rem;  
-  font-size: 1rem;
-  padding: 0.5rem;
-  font-weight: 300;
+fieldset {
   border: none;
-  border-radius: 2px;
+  margin-bottom: 15px;
+  padding: 0;
 }
 
-.group-title-task > input {
-  width: 27.5rem;
-  position: relative;
-  left: 2rem;  
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.group-description-task > input {
-  width: 30rem;
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type='text']:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 .btn-new-task {
-  width: 10rem;
-  height: 2rem;
-  font-size: 0.8rem;
-  border: solid 2px #fff;
-  background-color: var(--btn-color);
-  color: #fff;
-  font-weight: 700;
-  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.btn-new-task:hover,
-.btn-new-task:active {
-  background-color: #fff;
-  border: solid 2px #a477ff;
-  color: #a477ff;
-  transition: 0.5s;
+.btn-new-task:hover {
+  background-color: #0056b3;
 }
-

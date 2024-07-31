@@ -3,18 +3,17 @@ import { Header } from '../../Layouts/Header/Header'
 import {Main} from '../../Layouts/Main/Main'
 import { ContainerTasks } from '../../Layouts/ContainerTasks/ContainerTasks';
 import { ItemTask } from '../../ItemTask/ItemTask';
-import { TasksProvider, taskContext } from '../../Context/Context';
-
+import { NewTask } from '../../NewTask/NewTask';
+import { taskcontext } from '../../Context/Context';
 export const Home = () => {
-
-  const context= useContext(taskContext)
+  const context= useContext(taskcontext)
 
   return (
     <>
 <header>
   <h1> Gestor de tareas</h1>
   </header>   
-  
+  <NewTask/>
   <Main>
     <ul> 
     <ContainerTasks>
