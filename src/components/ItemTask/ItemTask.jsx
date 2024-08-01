@@ -1,29 +1,23 @@
-import { useContext } from 'react';
-import './ItemTask.css';
-import { taskcontext } from '../Context/Context';
+import { useContext } from "react"
+import { taskContext } from "../Context/Context"
+import './ItemTask.css'
 
-export const ItemTask = ({ idTask, content, titleTask }) => {
-  const {tasks,   updateTasksStatus } = useContext(taskcontext)
+export const ItemTask =({idTask,content, titleTask}) => {
   
-  const task = tasks.find( task =>task.id === idTask)
+  const {tasks, updateTaskStatus} = useContext(taskContext)
   
+  const task = tasks.find(task => task.id === idTask)
   
-  const handleCheckboxChange = () => {
-    //actualizar estado tarea
-    updateTasksStatus(idTask, !task.status)
+  const handleCheckboxChange=() => {
+    //actualizamos el estado de la tarea
+    updateTaskStatus(idTask, !task.status);
   }
   return (
-    <li 
-    id={idTask} className={task.status ? "item-task checked" : "item-task"}
-    >
-      <div className={task.status ? "circle-state circle-green-mint" : "circle-state"}>
-    
-      </div>
-      <h2>{titleTask}</h2>
-      <p>{content}</p>
-      <input type="Checkbox" 
-      checked={task.status}
-      onChange={handleCheckboxChange}/>
-          </li>
-  );
-};
+<li id= {idTask} className={task.status ? 'item-task checked' : 'item-task'}>
+  <div className={task.status ? 'circle-state circle-green-mint': 'circle-state'}></div>
+  <h2>{titleTask}</h2>
+  <p>{content}</p>
+  <input type="checkbox" checked={task.status} onChange={handleCheckboxChange} />
+</li>
+  )
+}

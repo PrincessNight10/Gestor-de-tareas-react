@@ -5,22 +5,23 @@
   justify-content: center;
   align-items: center;
   margin-top: 12rem;
-  padding: 1rem;  
+  padding: 1rem;
 }
 
 .container-filters > label {
   color: #000;
   font-size: 1.2rem;
   margin: 0.2rem;
-  font-weight: 800;
+  font-weight: 800
 }
 
 .container-filters > select {
   width: 18rem;
   border-radius: 25px;
-  margin-left: 0.5rem;  
-  color: #35c2fa;
+  margin-left: 0.5rem;
+  color: #161d3f;
   font-size: 1rem;
   padding: 0.5rem;
   cursor: pointer;
+  background-color: #276f7c;
 }
