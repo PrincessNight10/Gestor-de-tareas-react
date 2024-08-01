@@ -1,9 +1,8 @@
 
 main {
-  margin-bottom: 14em;  
   width: 83vw;
-  height: max-content;
-  margin-top: 20rem;
+  height: 44em;
+  margin-top: 2rem;
   background-color: #a39ce5;
   color: #81fadc;
   display: flex;
