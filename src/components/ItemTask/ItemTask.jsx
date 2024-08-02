@@ -13,11 +13,11 @@ export const ItemTask =({idTask,content, titleTask}) => {
     updateTaskStatus(idTask, !task.status);
   }
   return (
-<li id= {idTask} className={task.status ? 'item-task checked' : 'item-task'}>
-  <div className={task.status ? 'circle-state circle-green-mint': 'circle-state'}></div>
-  <h2>{titleTask}</h2>
-  <p>{content}</p>
-  <input type="checkbox" checked={task.status} onChange={handleCheckboxChange} />
-</li>
-  )
-}
+    <li id={idTask} className={task.status ? 'item-task checked' : 'item-task'}>
+      <div className={task.status ? 'circle-state circle-green-mint' : 'circle-state'}></div>
+      <h2 className={task.status ? 'checked' : ''}>{titleTask}</h2>
+      <p className={task.status ? 'checked' : ''}>{content}</p>
+      <input type="checkbox" checked={task.status} onChange={handleCheckboxChange} />
+    </li>
+  );
+}  
