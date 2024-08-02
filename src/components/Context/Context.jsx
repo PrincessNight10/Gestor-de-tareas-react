@@ -5,7 +5,10 @@ import { v4 as uuidv4 } from 'uuid';
 export const taskContext = createContext()
 
 const tsk = [
- 
+{id:uuidv4 (), title:'Leer', description: 'El libro de la selva', status: true },
+{id:uuidv4 (), title:'Partido', description: 'Barcelona vs real madrid', status: true },
+{id:uuidv4 (), title:'Revisar', description: 'El espectador', status: false }
+
 ]
 
 
